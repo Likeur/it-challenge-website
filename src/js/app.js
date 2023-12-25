@@ -36,7 +36,7 @@ const heroElements = [ logo , menuToggle, btnMenu,uplPresent, text1, text2, para
 
 
 gsap.from(heroElements,{
-    y:34,
+    y:54,
     opacity:0,
     duration:0.8,
     stagger:{amount:1},
