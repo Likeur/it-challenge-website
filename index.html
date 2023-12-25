@@ -17,12 +17,12 @@
                 </a>
                 <div id="beforemenu" class="absolute h-0 duration-200 w-screen z-30 bg-white/60 backdrop-blur-md top-0 bottom-0 left-0 right-0 "></div>
                 <ul id="menu__toggle" class="absolute hidden z-40 text-gray-700  duration-300 scale-0 lg:scale-100 top-20 w-[70vw] p-4 lg:p-0 rounded-xl lg:text-lg lg:flex lg:items-center lg:rounded-none lg:w-max bg-white shadow-md lg:shadow-none lg:bg-transparent lg:overflow-hidden lg:top-0 lg:relative">
-                   <li id="link1" class="mt-1 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="" class="block">Acceuil</a></li>
-                   <li id="link2" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="" class="block">chatbot</a></li>
-                   <li id="link3" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="" class="block">Contact</a></li>
+                   <li id="link1" class="mt-1 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="" class="block" id="lien1">Acceuil</a></li>
+                   <li id="link2" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="" class="block" id="lien2">chatbot</a></li>
+                   <li id="link3" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="" class="block" id="lien3">Contact</a></li>
                    <li id="link3" class="mt-5 group shadow-md lg:ml-3 lg:mt-0 p-3 px-5 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-blue-600/20 lg:rounded-full bg-blue-600 w-max text-white"><a href="" class="flex items-center">
                     <span>Inscription</span>
-                    <i class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 lg:ml-2 shadow-md bg-white text-blue-600 p-1 rounded-full'></i>
+                    <i id="fleche1" class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 lg:ml-2 shadow-md bg-white text-blue-600 p-1 rounded-full'></i>
                     </a></li>
                 </ul>
                 <ul id="menu__toggle2" class="absolute lg:hidden z-40 text-gray-700  duration-300 scale-0 lg:scale-100 top-20 w-[70vw] p-4 lg:p-0 rounded-xl lg:text-lg lg:items-center lg:rounded-none lg:w-max bg-white shadow-md lg:shadow-none lg:bg-transparent lg:overflow-hidden lg:top-0 lg:relative">
@@ -60,7 +60,7 @@
                 <ul id="inscri_btn" class="mt-5 flex justify-center">
                     <li class="mt-5 lg:ml-3 shadow-md group lg:mt-0 p-3 px-5 hover:bg-blue-600 hover:text-white hover:duration-300 lg:hover:text-blue-600 lg:hover:bg-blue-600/20 rounded-full bg-blue-600 w-max text-white"><a href="" class="flex items-center">
                         <span>Inscription</span>
-                        <i class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 shadow-md lg:ml-2 bg-white text-blue-600 p-1 rounded-full'></i>
+                        <i id="fleche2" class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 shadow-md lg:ml-2 bg-white text-blue-600 p-1 rounded-full'></i>
                         </a>
                     </li>
                 </ul>
@@ -84,18 +84,20 @@
     </section>
 
     <footer class="p-6 lg:p-4 lg:h-[50vh] flex flex-col justify-around  bg-blue-600">
-        <div class="flex flex-col lg:flex-row justify-around">
-            <div>
-                <a href="./index.html" class="relative z-50">
-                    <img id="logo" src="./assets/img/logo ok OK.png" class="w-20 lg:w-24 shadow-lg rounded-full" alt="">
-                </a>
-            </div>
+        <div class="flex flex-col lg:flex-row justify-around"> 
             <div class="text-white text-xs mt-5 lg:mt-0 lg:text-lg flex flex-col lg:flex-row justify-between lg:w-[60vw]">
-                <div class="flex flex-col">
-                    <a href="" class="block mt-3">Acceuil</a>
-                    <a href="" class="block mt-3">Chatbot</a>
-                    <a href="" class="block mt-3">Nous contacter</a>
-                    <a href="" class="block mt-3">FAQs</a>
+                <div class="flex w-[70vw] justify-between items-center">
+                    <div>
+                        <a href="./index.html" class="relative z-50">
+                            <img id="logo" src="./assets/img/logo ok OK.png" class="w-20 lg:w-24 shadow-lg rounded-full" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col">
+                        <a href="" class="block mt-3">Acceuil</a>
+                        <a href="" class="block mt-3">Chatbot</a>
+                        <a href="" class="block mt-3">Nous contacter</a>
+                        <a href="" class="block mt-3">FAQs</a>
+                    </div>
                 </div>
                 <div class="flex flex-col mt-5 lg:mt-0 lg:ml-5">
                     <a href="" class="block mt-3 underline">Rejoindre la communauté</a>
@@ -121,6 +123,6 @@
     <script src="https://unpkg.com/split-type"></script>
 
     <!-- link for javascript -->
-    <script src="/src/js/bundle.js"></script>
+    <script src="./src/js/bundle.js"></script>
 </body>
 </html>
