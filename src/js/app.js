@@ -3,13 +3,15 @@ import { gsap } from "gsap"
 
 const btnMenu = document.querySelector('#menubtn')
 const menuToggle = document.querySelector('#menu__toggle')
+const menuToggle2 = document.querySelector('#menu__toggle2')
+
 const beforemenu = document.querySelector('#beforemenu')
 const barUn = document.querySelector('#bar-1')
 const barDeux = document.querySelector('#bar-2')
 
 btnMenu.addEventListener('click', () => {
     beforemenu.classList.toggle('h-[100vh]')
-    menuToggle.classList.toggle('scale-100')
+    menuToggle2.classList.toggle('scale-100')
     barUn.classList.toggle('rotate-45')
     barUn.classList.toggle('absolute')
     barDeux.classList.toggle('mt-2')
