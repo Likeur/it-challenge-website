@@ -1,5 +1,8 @@
-import { gsap } from "gsap"
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import { SplitType } from "split-type"
+ 
+
 
 const btnMenu = document.querySelector('#menubtn')
 const menuToggle = document.querySelector('#menu__toggle')
@@ -37,15 +40,57 @@ const text2 = document.querySelector('#headingtext2')
 const paragraph = document.querySelector('#paragraph')
 const inscription = document.querySelector('#inscri_btn')
 
+const partnerText= document.querySelector('#partner_text')
+const partner1 = document.querySelector('#partnerimg1')
+const partner2 = document.querySelector('#partnerimg2')
+const partner3 = document.querySelector('#partnerimg3')
+const partner4 = document.querySelector('#partnerimg4')
+
 // const headingtext1 = new SplitType(text1, {types: 'word'})
 // const paragraph = new SplitType('#paragraph', {types:'lines'})
 
 const heroElements = [ logo ,lien1, lien2, lien3, btnMenu,uplPresent,img1, text1, text2,img2, paragraph, inscription, img3, imageBox, img4]
 
-gsap.from(heroElements,{
+function firstAnimation(){
+    gsap.from(heroElements,{
+        y:64,
+        opacity:0,
+        duration:0.8,
+        stagger:{amount:1},
+        ease:'ease'
+    })
+}
+
+firstAnimation()
+
+gsap.registerPlugin(ScrollTrigger);
+const partnerElements = [partnerText,partner1, partner2,partner3,partner4]
+
+gsap.from(partnerElements,{
+    scrollTrigger: {
+        trigger: partnerElements,
+        start: 'top 90%',
+        end: 'top 60%',
+     
+    },
     y:64,
     opacity:0,
-    duration:0.8,
+    duration:0.5,
     stagger:{amount:1},
-    ease:'ease'
+    ease:'ease',
+    
+})
+
+const sec3 = document.querySelector('#sec3')
+gsap.from(sec3,{
+    scrollTrigger: {
+        trigger: sec3,
+        start: 'top 90%',
+        end: 'top center',
+    },
+    scale:0,
+    borderRadius:'50%',
+    duration:0.8,
+    ease:'ease',
+    
 })
