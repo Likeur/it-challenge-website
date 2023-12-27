@@ -88,15 +88,35 @@
             <img id="partnerimg1" src="./assets/img/partners-1.png" width="90" alt="">
             <img id="partnerimg2" src="./assets/img/partners-2.png" width="80"  class="lg:ml-8" alt="">
             <img id="partnerimg3" src="./assets/img/partners-3.png" width="80"  class="self-center lg:ml-12" alt="">
-            <img id="partnerimg4" src="./assets/img/partners-4.png" width="40"  class="self-center lg:ml-14" alt="">
+            <img id="partnerimg4" src="./assets/img/partners-4.png" width="40"  class="self-center ml-3 lg:ml-14" alt="">
         </div>
     </section>
-    <section class="h-[100vh] w-screen">
-        <div id="sec3" class="h-[100vh] bg-blue-600 w-full">
-
+    <section class="lg:h-[100vh] w-full h-[100vh]">
+        <!-- <div id="sec3" class="h-[100vh] bg-black w-full"></div> -->
+        <div class="grid w-screen place-content-center gap-4 p-4 lg:h-[80vh] lg:grid-cols-2">
+            <div class=" grid grid-cols-4 mt-6 lg:mt-0 lg:grid-cols-3 h-[50vh] lg:h-[60vh] w-full p-4 lg:p-6">
+                <div></div>
+                <div class="col-span-2 lg:col-span-2">
+                    <img src="./assets/img/presentation.jpg" class="object-cover aspect-video h-full w-full rounded-xl" alt="">
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="grid grid-cols-3 items-center p-4 lg:p-6 w-full">
+                <div class="col-span-3 lg:col-span-2 p-4 lg:p-0">
+                    <h2 class="font-bold text-3xl lg:text-4xl">Présentation</h2>
+                    <p class="mt-5 text-gray-500">
+                        Le "IT Challenge" est un concours inter-étudiant en informatique encourageant <b>recherche</b>, <b>innovation</b> et <b>créativité</b>. Les participants développent des projets concrets avec des algorithmes et des applications adaptables. Les équipes présélectionnées présentent leurs prototypes lors du défi final.
+                    </p>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </section>
-
+    <section class="lg:h-[100vh] w-screen">
+       <p>FAQs</p>
+    </section>
     <footer class="p-6 lg:p-4 lg:h-[50vh] flex flex-col justify-around  bg-blue-600">
         <div class="flex flex-col lg:flex-row justify-around"> 
             <div class="text-white text-xs mt-5 lg:mt-0 lg:text-lg flex flex-col lg:flex-row justify-between lg:w-[90vw]">
@@ -133,10 +153,24 @@
             </div>
         </div>
     </footer>
-    <!-- Minified UMD bundle for splitType-->
-    <script src="https://unpkg.com/split-type"></script>
+    
 
     <!-- link for javascript -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> 
     <script src="./src/js/bundle.js"></script>
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
 </body>
 </html>

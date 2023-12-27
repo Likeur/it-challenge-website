@@ -13,7 +13,9 @@ const barDeux = document.querySelector('#bar-2')
 
 btnMenu.addEventListener('click', () => {
     beforemenu.classList.toggle('h-[100vh]')
-    menuToggle2.classList.toggle('scale-100')
+    setTimeout(() => {
+        menuToggle2.classList.toggle('scale-100')
+    }, 200);
     barUn.classList.toggle('rotate-45')
     barUn.classList.toggle('absolute')
     barDeux.classList.toggle('mt-2')
@@ -82,15 +84,4 @@ gsap.from(partnerElements,{
 })
 
 const sec3 = document.querySelector('#sec3')
-gsap.from(sec3,{
-    scrollTrigger: {
-        trigger: sec3,
-        start: 'top 90%',
-        end: 'top center',
-    },
-    scale:0,
-    borderRadius:'50%',
-    duration:0.8,
-    ease:'ease',
-    
-})
+const tl = gsap.timeline()
