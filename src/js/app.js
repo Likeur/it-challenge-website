@@ -73,6 +73,7 @@ gsap.from(partnerElements,{
         trigger: partnerElements,
         start: 'top 90%',
         end: 'top 60%',
+        scrub : true
      
     },
     y:64,

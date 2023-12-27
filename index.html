@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body class="w-screen overflow-x-hidden">
+    <!-- header section -->
     <main class="w-full bg-blue-100 h-max">
         <header class="w-full lg:container lg:mx-auto border-black/5 p-4 lg:p-6">
             <nav class="px-5 flex items-center justify-between">
@@ -80,6 +81,8 @@
         </section>
         
     </main>
+
+    <!-- logo partner section -->
     <section class="relative bg-gray-100 lg:overflow-hidden flex flex-col lg:flex-row lg:justify-around items-center h-max lg:h-[15vh] p-4">
         <div>
             <h3 id="partner_text" class="text-gray-600 lg:text-xl">Rencontrez nos partenaires</h3>
@@ -91,10 +94,12 @@
             <img id="partnerimg4" src="./assets/img/partners-4.png" width="40"  class="self-center ml-3 lg:ml-14" alt="">
         </div>
     </section>
-    <section class="lg:h-[60vh] w-full h-[100vh]">
+
+    <!-- Découverte section -->
+    <section class="lg:h-[100vh] flex items-center w-full h-[100vh]">
         <!-- <div id="sec3" class="h-[100vh] bg-black w-full"></div> -->
         <div class="grid w-screen place-content-center gap-4 p-4 lg:h-[80vh] lg:grid-cols-2">
-            <div class=" grid mt-6 lg:mt-0 lg:grid-cols-3 h-[50vh] lg:h-[60vh] w-full p-4 lg:p-6">
+            <div class=" grid mt-6 lg:mt-0 lg:grid-cols-3 h-[40vh] lg:h-[60vh] w-full p-4 lg:p-6">
                 <div class="hidden lg:block"></div>
                 <div class="col-span-2 lg:col-span-2 aspect-video">
                     <img src="./assets/img/presentation.jpg" class="object-cover aspect-video h-full w-full rounded-xl" alt="">
@@ -104,7 +109,7 @@
             </div>
             <div class="grid grid-cols-3 items-center p-4 lg:p-6 w-full">
                 <div class="col-span-3 lg:col-span-2 p-4 lg:p-0">
-                    <h2 class="font-bold text-3xl lg:text-4xl">Présentation</h2>
+                    <h2 class="font-bold text-3xl lg:text-4xl text-slate-950">Présentation</h2>
                     <p class="mt-5 text-gray-500">
                         Le "IT Challenge" est un concours inter-étudiant en informatique encourageant <b>recherche</b>, <b>innovation</b> et <b>créativité</b>. Les participants développent des projets concrets avec des algorithmes et des applications adaptables. Les équipes présélectionnées présentent leurs prototypes lors du défi final.
                     </p>
@@ -114,52 +119,54 @@
             </div>
         </div>
     </section>
+
+    <!-- objectif section -->
     <section class="h-max w-full">
         <!-- <div id="sec3" class="h-[100vh] bg-black w-full"></div> -->
         <div class="flex flex-col items-center p-4 lg:p-6 w-full">
             <div>
-                <h2 class="font-bold text-3xl lg:text-4xl text-center">Objectif</h2>
-                <p></p>
+                <h2 class="font-bold text-3xl lg:text-4xl text-center text-slate-950">Objectif</h2>
+                <p class="mt-2 text-gray-600">Découvrez les objectifs du it challenge</p>
             </div>
-            <div class="lg:col-span-2 grid gap-3 lg:grid-cols-3 lg:gap-4 mt-8 lg:mt-16">
+            <div class="lg:col-span-2 grid gap-3 lg:grid-cols-3 lg:gap-4 mt-8 lg:mt-20">
                 <div class="border p-4 rounded-2xl lg:w-72 w-[21rem]">
-                    <span class="h-7 w-7 flex justify-center mt-2 items-center rounded-full border bg-gray-50"><i class='bx bx-search'></i></span>
-                    <h4 class="font-semibold">Encourager la recherche</h4>
+                    <span class="h-7 w-7 flex justify-center items-center rounded-full border bg-gray-50 text-blue-950"><i class='bx bx-search'></i></span>
+                    <h4 class="font-semibold mt-2">Encourager la recherche</h4>
                      <p class="mt-2 text-gray-600">
                         Stimuler les participants à explorer de nouvelles idées et technologies
                      </p>
                 </div>
                 <div class="border p-4 rounded-2xl lg:w-72 w-[21rem]">
-                    <span class="h-7 w-7 mt-2 flex justify-center items-center rounded-full border bg-gray-50"><i class='bx bx-bulb'></i></span>
-                    <h4 class="font-semibold">Faire progresser l'innovation</h4>
+                    <span class="h-7 w-7 flex justify-center items-center rounded-full border bg-gray-50 text-blue-950"><i class='bx bx-bulb'></i></span>
+                    <h4 class="font-semibold mt-2">Faire progresser l'innovation</h4>
                      <p class="mt-2 text-gray-600">
                         Catalyser des projets novateurs dans les domaines de l'intelligence artificielle et de la fintech.
                      </p>
                 </div>
                 <div class="border p-4 rounded-2xl lg:w-72 w-[21rem]">
-                    <span class="h-7 w-7 mt-2 flex justify-center items-center rounded-full border bg-gray-50"><i class='bx bx-command'></i></span>
-                    <h4 class="font-semibold"> Développer la créativité </h4>
+                    <span class="h-7 w-7 flex justify-center items-center rounded-full border bg-gray-50 text-blue-950"><i class='bx bx-command'></i></span>
+                    <h4 class="font-semibold mt-2"> Développer la créativité </h4>
                      <p class="mt-2 text-gray-600">
                         Inspirer la créativité en permettant aux étudiants de concrétiser leurs idées.
                      </p>
                 </div>
                 <div class="border p-4 rounded-2xl lg:w-72 w-[21rem]">
-                    <span class="h-7 w-7 mt-2 flex justify-center items-center rounded-full border bg-gray-50"><i class='bx bx-vector'></i></span>
-                    <h4 class="font-semibold"> Mise en pratique </h4>
+                    <span class="h-7 w-7 flex justify-center items-center rounded-full border bg-gray-50 text-blue-950"><i class='bx bx-vector'></i></span>
+                    <h4 class="font-semibold mt-2"> Mise en pratique </h4>
                      <p class="mt-2 text-gray-600">
                         Offrir aux étudiants une opportunité de mettre en pratique leurs compétences en informatique.
                      </p>
                 </div>
                 <div class="border p-4 rounded-2xl lg:w-72 w-[21rem]">
-                    <span class="h-7 w-7 mt-2 flex justify-center items-center rounded-full border bg-gray-50"><i class='bx bx-chevrons-up'></i></span>
-                    <h4 class="font-semibold"> Excellence </h4>
+                    <span class="h-7 w-7 flex justify-center items-center rounded-full border bg-gray-50 text-blue-950"><i class='bx bx-chevrons-up'></i></span>
+                    <h4 class="font-semibold mt-2"> Excellence </h4>
                      <p class="mt-2 text-gray-600">
                         Promouvoir l'excellence en informatique au sein de la communauté étudiante
                      </p>
                 </div>
                 <div class="border p-4 rounded-2xl lg:w-72 w-[21rem]">
-                    <span class="h-7 w-7 mt-2 flex justify-center items-center rounded-full border bg-gray-50"><i class='bx bx-trending-up'></i></span>
-                    <h4 class="font-semibold"> Encourager </h4>
+                    <span class="h-7 w-7 flex justify-center items-center rounded-full border bg-gray-50 text-blue-950"><i class='bx bx-trending-up'></i></span>
+                    <h4 class="font-semibold mt-2"> Encourager </h4>
                      <p class="mt-2 text-gray-600">
                         Encourager les étudiants à développer leur créativité et leur esprit d'innovation.
                      </p> 
@@ -167,7 +174,9 @@
             </div>   
         </div>
     </section>
-    <section class="lg:h-[100vh] w-screen">
+
+    <!-- FAQs Section -->
+    <section class="lg:h-[100vh] w-screen grid place-content-center">
        <p>FAQs</p>
     </section>
     <footer class="p-6 lg:p-4 lg:h-[50vh] flex flex-col justify-around  bg-blue-950 rounded-t-3xl">
@@ -208,9 +217,11 @@
     </footer>
     
 
-    <!-- link for javascript -->
+    <!-- link for lenis smooth scroll -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> 
     <script src="./src/js/bundle.js"></script>
+
+    <!-- initialisation du smooth scroll -->
     <script>
         const lenis = new Lenis()
 
