@@ -1398,6 +1398,10 @@ body{
     margin-top: 1.75rem;
   }
 
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:flex{
     display: flex;
   }
