@@ -72,7 +72,7 @@ gsap.from(partnerElements,{
     scrollTrigger: {
         trigger: partnerElements,
         start: 'top 90%',
-        end: 'top 60%',
+        end: 'top 40%',
         scrub : true
      
     },
@@ -87,5 +87,16 @@ gsap.from(partnerElements,{
 const sec3 = document.querySelector('#sec3')
 const tl = gsap.timeline()
 
-const facBtns = document.querySelectorAll('.fac-button')
+const facBtnUn = document.querySelector('.fac-button1')
+const faqBox = document.querySelector('.faq_box')
+const faqReponse = document.querySelector('.faq_reponse1')
+
+facBtnUn.addEventListener('click', () => {
+    faqBox.classList.toggle('h-max')
+    faqBox.classList.toggle('h-[10vh]')
+    faqReponse.classList.toggle('opacity-1')
+    faqReponse.classList.toggle('absolute')
+    faqReponse.classList.toggle('opacity-0')
+})
+
 
