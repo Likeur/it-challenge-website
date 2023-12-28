@@ -86,3 +86,6 @@ gsap.from(partnerElements,{
 
 const sec3 = document.querySelector('#sec3')
 const tl = gsap.timeline()
+
+const facBtns = document.querySelectorAll('.fac-button')
+
