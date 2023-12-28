@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../../assets/img/logo ok OK.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <main>
+        <header class="w-full lg:container lg:mx-auto border-black/5 p-4 lg:p-6">
+            <nav class="px-5 flex items-center border-b pb-2 lg:border-none justify-between">
+                <a href="./index.html" class="relative z-50 overflow-hidden">
+                    <img id="logo" src="../../assets/img/logo ok OK.png" class="w-10 lg:w-12 shadow-xl rounded-full" alt="">
+                </a>
+                <div id="beforemenu" class="absolute h-0 duration-200 w-screen z-30 bg-white backdrop-blur-lg top-0 bottom-0 left-0 right-0 "></div>
+                <ul id="menu__toggle" class="absolute hidden z-40 text-gray-700  duration-300 scale-0 lg:scale-100 top-20 w-[70vw] p-4 lg:p-0 rounded-xl lg:text-lg lg:flex lg:items-center lg:rounded-none lg:w-max bg-white shadow-md lg:shadow-none lg:bg-transparent lg:overflow-hidden lg:top-0 lg:relative">
+                   <li id="link1" class="mt-1 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="../../index.html" class="block" id="lien1">Acceuil</a></li>
+                   <li id="link2" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="" class="block" id="lien2">chatbot</a></li>
+                   <li id="link3" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="" class="block" id="lien3">Contact</a></li>
+                   <li id="link4" class="mt-5 group shadow-md lg:ml-3 lg:mt-0 p-3 px-5 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-blue-600/20 lg:rounded-full bg-blue-600 w-max text-white"><a href="" class="flex items-center">
+                        <span>Inscription</span>
+                        <i id="fleche1" class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 lg:ml-2 shadow-md bg-white text-blue-600 p-1 rounded-full'></i>
+                    </a></li>
+                </ul>
+                <ul id="menu__toggle2" class="absolute lg:hidden z-40 text-gray-700  duration-300 scale-0 lg:scale-100 top-20 w-[70vw] p-4 lg:p-0 rounded-xl lg:text-lg lg:items-center lg:rounded-none lg:w-max bg-white shadow-md lg:shadow-none lg:bg-transparent lg:overflow-hidden lg:top-0 lg:relative">
+                    <li id="link1" class="mt-1 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="" class="block">Acceuil</a></li>
+                    <li id="link2" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="" class="block">chatbot</a></li>
+                    <li id="link3" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="" class="block">Contact</a></li>
+                    <li id="link3" class="mt-5 group shadow-md lg:ml-3 lg:mt-0 p-3 px-5 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-blue-600/20 lg:rounded-full bg-blue-600 w-max text-white">
+                        <a href="./src/pages/inscription.html" class="flex items-center">
+                            <span>Inscription</span>
+                            <i class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 lg:ml-2 shadow-md bg-white text-blue-600 p-1 rounded-full'></i>
+                        </a></li>
+                 </ul>
+                <button id="menubtn" title="toggle nav btn" class="lg:hidden ml-2 lg:ml-0 z-50 relative mr-4">
+                    <div id="bar-1" class="bg-gray-800 h-0.5 w-6 rounded-full duration-300"></div>
+                    <div id="bar-2" class="bg-gray-800 h-0.5 w-6 rounded-full duration-300 mt-2"></div>
+                </button>  
+            </nav>
+        </header>
+
+        <section class="grid place-content-center mt-4 mb-16">
+            <h2 class="font-semibold text-center text-2xl">Remplissez ce Formulaire</h2>
+            <form action="">
+                <div class="border w-[90vw] p-4 lg:w-[80vw] mt-5 grid ">
+                    <div class="grid gap-4 lg:grid-cols-3">
+                        <div class="flex flex-col">
+                            <label for="" class="text-blue-950 text-sm">Nom du groupe</label>
+                            <input type="text" placeholder="Ex: Technet ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                        </div>
+                        <div class="flex flex-col mt-4 lg:mt-0">
+                            <label for="" class="text-blue-950 text-sm">Sujet</label>
+                            <input type="text" placeholder="Ex: Votre sujet ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                        </div>
+                        <div class="flex flex-col mt-4 lg:mt-0">
+                            <label for="" class="text-blue-950 text-sm">choisissez le theme</label>
+                            <select title="selection du theme" name="" id="" class="border p-1 outline-none px-2 mt-2 duration-300 focus:border focus:border-blue-950/30">
+                                <option value="">Choisissez le thème</option>
+                                <option value="">Fintech</option>
+                                <option value="">Intelligence artificielle (IA)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid gap-4 lg:grid-cols-3 ">
+                        <div>
+                            <div class="flex flex-col mt-2">
+                                <label for="" class="text-blue-950 text-sm">Nom 1er membre</label>
+                                <input type="text" placeholder="Ex: Likeur off ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                            </div>
+                            <div class="flex flex-col mt-2">
+                                <label for="" class="text-blue-950 text-sm">Matricule 1er membre</label>
+                                <input type="text" placeholder="Ex: Likeur off ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                            </div>
+                            <div class="flex flex-col mt-2">
+                                <label for="" class="text-blue-950 text-sm">Mail 1er membre</label>
+                                <input type="email" placeholder="Ex: Likeur off ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                            </div>
+                            <div class="flex flex-col mt-2">
+                                <label for="" class="text-blue-950 text-sm">n° tel 1er membre</label>
+                                <input type="text" placeholder="Ex: Likeur off ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                            </div>
+                            <div class="flex flex-col mt-4 lg:mt-0">
+                                <label for="" class="text-blue-950 text-sm">Promo</label>
+                                <select title="selection du theme" name="" id="" class="border p-1 outline-none px-2 mt-2 duration-300 focus:border focus:border-blue-950/30">
+                                    <option value="">Choisissez la promotion</option>
+                                    <option value="">Bac1</option>
+                                    <option value="">Bac2</option>
+                                    <option value="">Bac3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-col mt-2">
+                                <label for="" class="text-blue-950 text-sm">Nom 1er membre</label>
+                                <input type="text" placeholder="Ex: Likeur off ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                            </div>
+                            <div class="flex flex-col mt-2">
+                                <label for="" class="text-blue-950 text-sm">Matricule 1er membre</label>
+                                <input type="text" placeholder="Ex: Likeur off ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                            </div>
+                            <div class="flex flex-col mt-2">
+                                <label for="" class="text-blue-950 text-sm">Mail 1er membre</label>
+                                <input type="email" placeholder="Ex: Likeur off ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                            </div>
+                            <div class="flex flex-col mt-2">
+                                <label for="" class="text-blue-950 text-sm">n° tel 1er membre</label>
+                                <input type="text" placeholder="Ex: Likeur off ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                            </div>
+                            <div class="flex flex-col mt-4 lg:mt-0">
+                                <label for="" class="text-blue-950 text-sm">Promo</label>
+                                <select title="selection du theme" name="" id="" class="border p-1 outline-none px-2 mt-2 duration-300 focus:border focus:border-blue-950/30">
+                                    <option value="">Choisissez la promotion</option>
+                                    <option value="">Bac1</option>
+                                    <option value="">Bac2</option>
+                                    <option value="">Bac3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-col mt-2">
+                                <label for="" class="text-blue-950 text-sm">Nom 1er membre</label>
+                                <input type="text" placeholder="Ex: Likeur off ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                            </div>
+                            <div class="flex flex-col mt-2">
+                                <label for="" class="text-blue-950 text-sm">Matricule 1er membre</label>
+                                <input type="text" placeholder="Ex: Likeur off ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                            </div>
+                            <div class="flex flex-col mt-2">
+                                <label for="" class="text-blue-950 text-sm">Mail 1er membre</label>
+                                <input type="email" placeholder="Ex: Likeur off ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                            </div>
+                            <div class="flex flex-col mt-2">
+                                <label for="" class="text-blue-950 text-sm">n° tel 1er membre</label>
+                                <input type="text" placeholder="Ex: Likeur off ..." class="border outline-none duration-300 focus:border focus:border-blue-950/30 px-2 p-1 mt-2 rounded-md">
+                            </div>
+                            <div class="flex flex-col mt-4 lg:mt-0">
+                                <label for="" class="text-blue-950 text-sm">Promo</label>
+                                <select title="selection du theme" name="" id="" class="border p-1 outline-none px-2 mt-2 duration-300 focus:border focus:border-blue-950/30">
+                                    <option value="">Choisissez la promotion</option>
+                                    <option value="">Bac1</option>
+                                    <option value="">Bac2</option>
+                                    <option value="">Bac3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/bundle.js"></script>
+</body>
+</html>
