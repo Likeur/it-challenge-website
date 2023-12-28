@@ -12,8 +12,8 @@
     <main>
         <header class="w-full lg:container lg:mx-auto border-black/5 p-4 lg:p-6">
             <nav class="px-5 flex items-center border-b pb-2 lg:border-none justify-between">
-                <a href="./index.html" class="relative z-50 overflow-hidden">
-                    <img id="logo" src="../../assets/img/logo ok OK.png" class="w-10 lg:w-12 shadow-xl rounded-full" alt="">
+                <a href="../../index.html" class="relative z-50 overflow-hidden">
+                    <img id="logo" src="../../assets/img/logo ok OK.png" class="w-10 lg:w-12 " alt="">
                 </a>
                 <div id="beforemenu" class="absolute h-0 duration-200 w-screen z-30 bg-white backdrop-blur-lg top-0 bottom-0 left-0 right-0 "></div>
                 <ul id="menu__toggle" class="absolute hidden z-40 text-gray-700  duration-300 scale-0 lg:scale-100 top-20 w-[70vw] p-4 lg:p-0 rounded-xl lg:text-lg lg:flex lg:items-center lg:rounded-none lg:w-max bg-white shadow-md lg:shadow-none lg:bg-transparent lg:overflow-hidden lg:top-0 lg:relative">
@@ -41,7 +41,7 @@
                 </button>  
             </nav>
         </header>
-
+        <!-- Start for the subscription form -->
         <section class="grid place-content-center mt-4 mb-16">
             <h2 class="font-semibold text-center text-2xl">Remplissez ce Formulaire</h2>
             <form action="">
@@ -57,7 +57,7 @@
                         </div>
                         <div class="flex flex-col mt-2 lg:mt-0">
                             <label for="" class="text-blue-950 text-sm">choisissez le theme</label>
-                            <select title="selection du theme" name="" id="" class="border p-1 outline-none px-2 mt-2 duration-300 focus:border focus:border-blue-950/30">
+                            <select title="selection du theme" name="" id="" class="border rounded-md p-1 outline-none px-2 mt-2 duration-300 focus:border focus:border-blue-950/30">
                                 <option value="">Choisissez le thème</option>
                                 <option value="">Fintech</option>
                                 <option value="">Intelligence artificielle (IA)</option>
@@ -86,7 +86,6 @@
                                 <label for="" class="text-blue-950 text-sm">Promo</label>
                                 <select title="selection du theme" name="" id="" class="border rounded-md p-1 outline-none px-2 mt-2 duration-300 focus:border focus:border-blue-950/30">
                                     <option value="">Choisissez la promotion</option>
-                                    <option value="">Bac1</option>
                                     <option value="">Bac2</option>
                                     <option value="">Bac3</option>
                                 </select>
@@ -113,7 +112,6 @@
                                 <label for="" class="text-blue-950 text-sm">Promo</label>
                                 <select title="selection du theme" name="" id="" class="border p-1 rounded-md outline-none px-2 mt-2 duration-300 focus:border focus:border-blue-950/30">
                                     <option value="">Choisissez la promotion</option>
-                                    <option value="">Bac1</option>
                                     <option value="">Bac2</option>
                                     <option value="">Bac3</option>
                                 </select>
@@ -140,7 +138,6 @@
                                 <label for="" class="text-blue-950 text-sm">Promo</label>
                                 <select title="selection du theme" name="" id="" class="border rounded-md p-1 outline-none px-2 mt-2 duration-300 focus:border focus:border-blue-950/30">
                                     <option value="">Choisissez la promotion</option>
-                                    <option value="">Bac1</option>
                                     <option value="">Bac2</option>
                                     <option value="">Bac3</option>
                                 </select>
@@ -163,12 +160,38 @@
             </form>
         </section>
 
+        <!-- Condition section -->
+        <section class="p-4 grid place-content-center bg-blue-600/5 mt-5">
+            <div class="lg:w-[70vw] mb-8 mt-8  lg:mt-16 lg:mb-16">
+                <div class="mb-8">
+                    <h3 class="text-2xl  font-semibold text-center">Les Conditions d'inscription</h3>
+                    <p class="text-gray-600 text-center mt-3">Lisez bien les conditions avant de vous inscrires</p>
+                </div>
+                <ul class="grid gap-4 lg:gap-6 lg:grid-cols-3">
+                    <li class="bg-gray-100 p-4 rounded-xl">1. S’inscrire au concours uniquement via cette plateforme d’inscription.</li>
+                    <li class="bg-gray-100 p-4 rounded-xl">2. Chaque équipe sera composée de 3 membres (étudiants inscrits régulièrement à la faculté des sciences informatiques), et lors de l'inscription, ils doivent fournir les noms de tous les membres de l'équipe et un nom pour désigner l’équipe.</li>
+                    <li class="bg-gray-100 p-4 rounded-xl">3. Est éligible tout étudiants de BAC 2 ou BAC 3, régulièrement inscrit à la faculté des sciences informatique de l’université protestante de Lubumbashi.</li>
+                    <li class="bg-blue-100 p-4 rounded-xl lg:col-span-2">4. Il est souhaitable que les équipes soit composées d’un mélange des étudiants des différentes options (SI, IA, GL et IAGE) et de différentes promotions (deuxième et troisième année).</li>
+                    <li class="bg-gray-100 p-4 rounded-xl ">5. Une équipe ne doit pas être composée des étudiants de troisième année seulement.</li>
+                    <li class="bg-gray-100 p-4 rounded-xl">6. Les équipes sont encouragées à ne pas demander l'aide d'amis et d'enseignants, afin de maximiser leur propre apprentissage. Les équipes d'un même domaine de projet ne sont pas encouragées à discuter entre elles.</li>
+                    <li class="bg-red-100 p-4 rounded-xl lg:col-span-2">7. Toutes les équipes afin de se qualifier pour la finale, doivent conserver tous leurs membres qui se sont inscrits depuis le début. Chaque équipe doit assister aux ateliers et conférences qui seront programmés par l’organisateur.</li>
+                    <li class="bg-gray-100 p-4 rounded-xl">8. Toutes les équipes et tous les participants sélectionnés doivent être présents le jour du défi final.</li>
+                    <li class="bg-gray-100 p-4 rounded-xl">9. Si une équipe ou un membre d'équipe décide de se retirer de la compétition, l'équipe doit en informer immédiatement l’organisateur.</li>
+                </ul>
+                
+                <div class="mt-8">
+                    <h4 class="text-red-600 font-medium">NB : Les équipes ne sont pas autorisées à changer les membres encore moins le nom de l’équipe après la soumission du formulaire d'inscription.</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer section -->
         <footer class="p-6 lg:p-4 lg:h-[50vh] flex flex-col justify-around  bg-blue-950 rounded-t-3xl">
             <div class="flex flex-col lg:flex-row justify-around"> 
                 <div class="text-white text-xs mt-5 lg:mt-0 lg:text-lg flex flex-col lg:flex-row justify-between lg:w-[90vw]">
                     <div class="flex w-[70vw] lg:w-[40vw] justify-between items-center">
                         <div>
-                            <a href="./index.html" class="relative z-50">
+                            <a href="../../index.html" class="relative z-50">
                                 <img id="logo" src="../../assets/img/logo ok OK.png" class="w-20 lg:w-24 shadow-lg rounded-full" alt="">
                             </a>
                         </div>
@@ -201,6 +224,23 @@
         </footer>
     </main>
 
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> 
     <script src="../js/bundle.js"></script>
+
+    <!-- initialisation du smooth scroll -->
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
 </body>
 </html>
