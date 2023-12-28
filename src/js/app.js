@@ -87,16 +87,36 @@ gsap.from(partnerElements,{
 const sec3 = document.querySelector('#sec3')
 const tl = gsap.timeline()
 
+// fac section manipulation
+
 const facBtnUn = document.querySelector('.fac-button1')
+const facCroixUn = document.querySelector('.fac-croix1')
 const faqBox = document.querySelector('.faq_box')
 const faqReponse = document.querySelector('.faq_reponse1')
 
 facBtnUn.addEventListener('click', () => {
-    faqBox.classList.toggle('h-max')
-    faqBox.classList.toggle('h-[10vh]')
+    gsap.to(faqBox,{
+        height:'30vh',
+        ease:'ease',
+        duration:0.03
+    })
     faqReponse.classList.toggle('opacity-1')
     faqReponse.classList.toggle('absolute')
     faqReponse.classList.toggle('opacity-0')
+    facBtnUn.classList.add('hidden')
+    facCroixUn.classList.remove('hidden')
+})
+facCroixUn.addEventListener('click', () => {
+    gsap.to(faqBox,{
+        height:'10vh',
+        ease:'ease',
+        duration:0.03
+    })
+    faqReponse.classList.toggle('opacity-1')
+    faqReponse.classList.toggle('absolute')
+    faqReponse.classList.toggle('opacity-0')
+    facBtnUn.classList.remove('hidden')
+    facCroixUn.classList.add('hidden')
 })
 
 
