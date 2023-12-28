@@ -1702,6 +1702,14 @@ body{
     width: max-content;
   }
 
+  .lg\:max-w-\[\]{
+    max-width: ;
+  }
+
+  .lg\:max-w-\[50vw\]{
+    max-width: 50vw;
+  }
+
   .lg\:scale-100{
     --tw-scale-x: 1;
     --tw-scale-y: 1;
@@ -1726,6 +1734,10 @@ body{
 
   .lg\:items-center{
     align-items: center;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
   }
 
   .lg\:justify-around{
