@@ -8,90 +8,49 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body class=" overflow-hidden bg-gray-50 w-[100%]">
-    <main class="w-[100%]">
-        <section class="flex w-[100%]">
-            
-            <div class="h-[100vh] w-[20%] shadow-lg bg-white rounded-2xl p-4">
-                <div>
-                    <h1 class="text-2xl font-semibold bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">It challenge Admin</h1>
-                    <p class="text-gray-400">Pax mk</p>
+<body class="w-screen overflow-x-hidden">
+    <main class="w-full">
+        <nav class="p-4 border-b flex justify-between items-center">
+            <ul class="flex gap-4">
+                <li><a href="./homead.html" class="block p-2 bg-blue-950 shadow-md text-white rounded-lg hover:bg-blue-800 duration-300 drop-shadow-lg">Dashboard</a></li>
+                <li><a href="./etudiant.html" class="block p-2 text-gray-900">Etudiants</a></li>
+                <li><a href="./groupe.html" class="block p-2 text-gray-900">Groupe</a></li>
+            </ul>
+            <div class="group">
+                <div class="h-8 w-8 bg-gray-500 rounded-full flex justify-center items-center text-white group-hover:cursor-pointer">s</div>
+                <div class="bg-gray-100 mt-3 w-32 translate-y-3 group-hover:translate-y-0 duration-300 opacity-0 group-hover:opacity-100 rounded-lg shadow-md absolute -z-10 group-hover:z-50 right-10  border p-2">
+                    <div>
+                        <h2 class="font-semibold text-gray-900">The pansa</h2>
+                        <p class="text-sm text-gray-500">Admin</p>
+                    </div>
+                    <button class="p-1 px-2 mt-4 w-full bg-red-600 text-white rounded-lg">Log out</button>
                 </div>
-
-                <nav class="flex flex-col p-4 mt-5">
-                    <a href="homead.html" class=" bg-blue-500 text-white p-2 shadow-lg px-5 rounded-xl  hover:bg-blue-600 hover:text-white">Dashboard</a>
-                    <a href="etudiant.html" class=" mt-5 bg-white text-gray-900 p-2 shadow-lg px-5 rounded-xl hover:bg-blue-600 hover:text-white">Etudiant</a>
-                    <button class=" bg-white text-gray-900 p-2 shadow-lg px-5 mt-24 rounded-xl hover:bg-blue-600 hover:text-white">Deconnexion</button>
-                </nav>
             </div>
-            <section class="w-[80%]">
-               <section id="" class="h-[100vh] p-4 w-full">
-                <div class="flex justify-around w-full">
-                    <div class="relative h-32 w-72 bg-gradient-to-t from-blue-600 to-blue-400 rounded-xl shadow-lg overflow-hidden">
-                        <div class="flex flex-col items-center p-4">
-                            <h1 class="text-5xl font-semibold text-white">
-                                <span class="">0</span>
-                                
-                            </h1>
-                            <p class="mt-2 text-white font-semibold text-xl">Groupes</p>
-                        </div>
-                        <div class="absolute h-32 w-32 bg-blue-400 -top-12 -ml-12 shadow-lg rounded-full">
-    
-                        </div>
-                        <div class="absolute h-20 w-20 bg-blue-400 -top-7 -ml-7 shadow-lg rounded-full">
-    
-                        </div>
-                    </div>
-                    <div class="relative h-32 w-72 ml-3 bg-gradient-to-t from-blue-600 to-blue-400 rounded-xl shadow-lg overflow-hidden">
-                        <div class="flex flex-col items-center p-4">
-                            <h1 class="text-5xl font-semibold text-white">
-                                <span class="">0</span>
-                                
-                            </h1>
-                            <p class="mt-2 text-white font-semibold text-xl">Etudiants</p>
-                        </div>
-                        <div class="absolute h-32 w-32 bg-blue-400 -top-12 -ml-12 shadow-lg rounded-full">
-    
-                        </div>
-                        <div class="absolute h-20 w-20 bg-blue-400 -top-7 -ml-7 shadow-lg rounded-full">
-    
-                        </div>
-                    </div>
-                    
-                </div>
+        </nav>
 
-                <div class="mt-5 flex justify-between">
-                    <div class="w-full">
-                        <h1 class="bg-white shadow-xl text-center rounded-xl p-2 text-gray-900 font-semibold">Groupes Ajouté</h1>
-                        <div class="flex mt-5 w-full">
-                            <div class="w-full flex h-[60vh] overflow-y-scroll bg-white rounded-xl">
-                                <div  class="w-full relative">
-                                    <div class="flex sticky top-0">
-                                        <h1 class="sticky top-0 w-full text-center p-2 rounded-tl-xl  shadow-xl border-r border-white text-white font-semibold bg-blue-500">Nom</h1>
-                                        <h1 class="sticky top-0 w-full text-center p-2 rounded-tr-xl shadow-xl text-white font-semibold bg-blue-500">intitulé projet</h1>
-                                    </div>
-                                    
-                                    <div class="flex justify-between border-b">
-                                        <div class="mt-5 w-[50%]  border-r p-3">
-                                            <h1 class="font-semibold uppercase">Nom groupe</h1>
-                                        </div>
-                                        <div class="mt-5 w-[50%] p-3">
-                                            <h1 class="font-semibold uppercase">Nom sujet</h1>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
+        <section class="flex justify-center">
+            <section class="grid justify-center lg:w-[50vw]">
+                <section class="grid gap-4 lg:gap-6 grid-cols-2 p-4 lg:p-6">
+                    <div class="bg-blue-600 lg:h-max text-white shadow-sm flex flex-col items-center rounded-lg p-4 px-6">
+                        <h2 class="text-xl font-medium">0</h2>
+                        <p>Groupe</p>
                     </div>
-                    
-                </div>
-               </section>
-               
+                    <div class="bg-blue-600 lg:h-max text-white shadow-sm flex flex-col items-center rounded-lg p-4 px-6">
+                        <h2 class="text-xl font-medium">0</h2>
+                        <p>Etudiants</p>
+                    </div>
+                </section>
+        
+                <section class="p-4 flex flex-col items-center">
+                    <div class="flex justify-center p-4">
+                        <h3 class="rounded-lg bg-blue-950/5 text-blue-950/90 p-2 w-[70vw] text-center">Actions Rapides</h3>
+                    </div>
+                    <div class="p-4 grid gap-2 grid-cols-2 justify-center"> 
+                        <a href="./groupe.html" class="block p-2 border text-blue-600 w-max px-3 rounded-lg">liste des groupes</a>
+                        <a href="./etudiant.html" class="block border text-blue-600 w-max px-3  p-2 rounded-lg">liste des étudiants</a>
+                    </div>
+                </section>
             </section>
-          
         </section>
     </main>
 </body>
