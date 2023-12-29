@@ -10,24 +10,24 @@
 </head>
 <body>
     <main>
-        <header class="w-full lg:container lg:mx-auto border-black/5 p-4 lg:p-6">
+        <header class="w-full lg:container overflow-hidden lg:mx-auto border-black/5 p-4 lg:p-6">
             <nav class="px-5 flex overflow-hidden items-center border-b pb-2 lg:border-none justify-between">
                 <a href="../../index.html" class="relative z-50 overflow-hidden">
-                    <img id="logo" src="../../assets/img/logo ok OK.png" class="w-10 lg:w-12 " alt="">
+                    <img src="../../assets/img/logo ok OK.png" class="w-10 lg:w-12 " alt="">
                 </a>
                 <div id="beforemenu" class="absolute h-0 duration-200 w-screen z-30 bg-white backdrop-blur-lg top-0 bottom-0 left-0 right-0 "></div>
                 <ul id="menu__toggle" class="absolute hidden z-40 text-gray-700  duration-300 scale-0 lg:scale-100 top-20 w-[70vw] p-4 lg:p-0 rounded-xl lg:text-lg lg:flex lg:items-center lg:rounded-none lg:w-max bg-white shadow-md lg:shadow-none lg:bg-transparent lg:overflow-hidden lg:top-0 lg:relative">
                    <li id="link1" class="mt-1 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="../../index.html" class="block" id="lien1">Acceuil</a></li>
                    <li id="link2" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="./chatbot.html" class="block" id="lien2">chatbot</a></li>
                    <li id="link3" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="" class="block" id="lien3">Contact</a></li>
-                   <li id="link4" class="mt-5 group shadow-md lg:ml-3 lg:mt-0 p-3 px-5 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-blue-600/20 lg:rounded-full bg-blue-600 w-max text-white"><a href="" class="flex items-center">
+                   <li id="link4" class="mt-5 group shadow-md lg:ml-3 lg:mt-0 p-3 px-5 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-blue-600/20 lg:rounded-full bg-blue-600 w-max text-white"><a href="./inscription.html" class="flex items-center">
                         <span>Inscription</span>
                         <i id="fleche1" class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 lg:ml-2 shadow-md bg-white text-blue-600 p-1 rounded-full'></i>
                     </a></li>
                 </ul>
                 <ul id="menu__toggle2" class="absolute lg:hidden z-40 text-gray-700  duration-300 scale-0 lg:scale-100 top-20 w-[70vw] p-4 lg:p-0 rounded-xl lg:text-lg lg:items-center lg:rounded-none lg:w-max bg-white shadow-md lg:shadow-none lg:bg-transparent lg:overflow-hidden lg:top-0 lg:relative">
-                    <li id="link1" class="mt-1 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="" class="block">Acceuil</a></li>
-                    <li id="link2" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="" class="block">chatbot</a></li>
+                    <li id="link1" class="mt-1 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="../../index.html" class="block">Acceuil</a></li>
+                    <li id="link2" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="./chatbot.html" class="block">chatbot</a></li>
                     <li id="link3" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="" class="block">Contact</a></li>
                     <li id="link3" class="mt-5 group shadow-md lg:ml-3 lg:mt-0 p-3 px-5 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-blue-600/20 lg:rounded-full bg-blue-600 w-max text-white">
                         <a href="./src/pages/inscription.html" class="flex items-center">
@@ -35,6 +35,9 @@
                             <i class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 lg:ml-2 shadow-md bg-white text-blue-600 p-1 rounded-full'></i>
                         </a></li>
                  </ul>
+                 <div>
+                    <p class="mt-4 mb-4 duration-200 text-red-600">Veuillez remplir tous les champs</p>
+                 </div>
                 <button id="menubtn" title="toggle nav btn" class="lg:hidden ml-2 lg:ml-0 z-50 relative mr-4">
                     <div id="bar-1" class="bg-gray-800 h-0.5 w-6 rounded-full duration-300"></div>
                     <div id="bar-2" class="bg-gray-800 h-0.5 w-6 rounded-full duration-300 mt-2"></div>
