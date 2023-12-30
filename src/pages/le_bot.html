@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>it challenge chat</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <main class="h-screen overflow-hidden">
+        <section class="lg:flex lg:justify-center">
+            <div class="h-screen overflow-hidden bg-white flex flex-col lg:w-[60%] lg:border lg:shadow-sm">
+                <div class="bg-white h-[8%] z-40 border-b border-blue-950 shadow-sm fixed w-full top-0 lg:relative">
+                    <div class="flex justify-between items-center h-full p-2">
+                        <div>
+                            <span class="flex items-center">
+                                <span class="ml-2 font-semibold text-blue-950 text-lg ">it challenge Chat</span>
+                            </span>
+                        </div>
+                        <div class="relative">
+                            <a href="../../index.html" class="underline">Retour</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white relative top-12 z-10 h-[82%] lg:h-[95%] p-2 flex flex-col justify-end">
+                    <ul id="box-message" class=" h-[100%] flex flex-col overflow-x-hidden overflow-y-scroll mt-10 p-4">
+                        <li>
+                            <div class="flex justify-start mt-1">
+                                <div class="w-[80%] lg:w-[50%]">
+                                    <div class="bg-gray-200 border p-2 rounded-t-xl rounded-br-xl">
+                                        <h1>Hello, je suis samy le bot ,je peux t'aider à trouver un sujet</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mt-5 flex justify-end">
+                            <div class="bg-blue-600/10 ml-4 p-2 rounded-l-xl rounded-tr-xl">
+                                <h2>donne moi un sujet</h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <form action="" id="send-message-form"  class="h-[10%] z-40 fixed bottom-0 w-full lg:relative">
+                    <div class="bg-white border-t h-[100%] p-4 flex justify-between items-center">
+                        <input id="user-message" type="text" placeholder="votre question ici ..." class="ml-2 w-full rounded-full outline-none shadow-sm border p-2">
+                        <button type="submit" id="btn-submit" class="ml-2 h-8 w-8 bg-blue-950 rounded-full shadow-sm p-1 flex justify-center items-center"><i class='bx bx-send text-white text-xl'></i></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script> 
+        const btnOuvrir = document.querySelector('#ouvrir')
+        const btnFermer = document.querySelector('#fermer')
+        const discussionBox = document.querySelector('#discussion-box')
+
+        btnOuvrir.addEventListener('click', ()=>{
+            discussionBox.classList.remove('-translate-x-[100%]');
+        })
+        btnFermer.addEventListener('click', ()=>{
+            discussionBox.classList.add('-translate-x-[100%]');
+        })
+
+        let boxMessage = document.querySelector('#box-message')
+        const sendMessageForm = document.querySelector('#send-message-form')
+        const userMessage = document.querySelector('#user-message')
+
+
+        sendMessageForm.addEventListener('submit', (e)=>{
+            e.preventDefault()
+            sendMessageForm.reset()
+        })
+        
+        const btnSubmit = document.querySelector('#btn-submit')
+        let id = 1
+        btnSubmit.addEventListener('click',()=>{
+        
+                const userSend = document.createElement('li')
+                userSend.innerHTML = `
+                        <div class="flex justify-end mt-1">
+                            <div class="w-[80%]" >
+                                <div class="bg-green-500 border text-white p-2 rounded-t-xl rounded-bl-xl shadow-md mt-1">
+                                    <h1 id="user-mess${id}"></h1>
+                                </div>
+                            </div>
+                        </div>
+                          `
+                boxMessage.appendChild(userSend)
+                const userMess = document.querySelector(`#user-mess${id}`)
+                userMess.textContent = userMessage.value
+
+                //userMess.scrollIntoView();
+
+                const botreponse = document.createElement('li')
+                setTimeout(() => {
+                    boxMessage.appendChild(botreponse)
+                }, 200);
+                setTimeout(() => {
+                    botreponse.innerHTML = `
+                        <div class="flex justify-start mt-1">
+                            <div class="w-[80%]">
+                                <div id="boite-reponse" class="bg-gray-200 mt-1 border p-2 rounded-t-xl rounded-br-xl shadow-md">
+                                    <h1>ecrit...</h1>
+                                </div>
+                            </div>
+                        </div>
+                        `
+                }, 500);
+                setTimeout(() => {
+                    botreponse.innerHTML = `
+                        <div class="flex justify-start mt-1">
+                            <div class="w-[80%]">
+                                <div id="boite-reponse" class="bg-gray-200 mt-1 border p-2 rounded-t-xl rounded-br-xl shadow-md">
+                                    <h1 id="texte-affiche${id}"></h1>
+                                </div>
+                            </div>
+                        </div>
+                        `
+
+                        const reponse = "Hello mon cher développeur, je suis vraiment content de t'avoir ici";
+                        let texteAffiche = '';
+                        let index = 0;
+
+                        const afficherCar = () => {
+                            texteAffiche = reponse.substring(0, index);
+                            index++;
+
+                            document.getElementById(`texte-affiche${id}`).textContent = texteAffiche;
+
+                            if (index <= reponse.length) {
+                                setTimeout(afficherCar, 50);
+                                document.getElementById(`texte-affiche${id}`).scrollIntoView();
+                            }
+                        }; 
+                        afficherCar();
+                }, 1500);
+                id = id + 1
+        })
+        
+        
+
+    </script>
+</body>
+</html>
