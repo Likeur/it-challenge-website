@@ -42,12 +42,6 @@ const text2 = document.querySelector('#headingtext2')
 const paragraph = document.querySelector('#paragraph')
 const inscription = document.querySelector('#inscri_btn')
 
-const partnerText= document.querySelector('#partner_text')
-const partner1 = document.querySelector('#partnerimg1')
-const partner2 = document.querySelector('#partnerimg2')
-const partner3 = document.querySelector('#partnerimg3')
-const partner4 = document.querySelector('#partnerimg4')
-
 // const headingtext1 = new SplitType(text1, {types: 'word'})
 // const paragraph = new SplitType('#paragraph', {types:'lines'})
 
@@ -66,23 +60,6 @@ function firstAnimation(){
 firstAnimation()
 
 gsap.registerPlugin(ScrollTrigger);
-const partnerElements = [partnerText,partner1, partner2,partner3,partner4]
-
-gsap.from(partnerElements,{
-    scrollTrigger: {
-        trigger: partnerElements,
-        start: 'top 90%',
-        end: 'top 40%',
-        scrub : true
-     
-    },
-    y:64,
-    opacity:0,
-    duration:0.5,
-    stagger:{amount:1},
-    ease:'ease',
-    
-})
 
 const sec3 = document.querySelector('#sec3')
 const tl = gsap.timeline()
@@ -94,10 +71,20 @@ const facCroixUn = document.querySelector('.fac-croix1')
 const faqBox = document.querySelector('.faq_box')
 const faqReponse = document.querySelector('.faq_reponse1')
 
+const facBtnDeux = document.querySelector('.fac-button2')
+const facCroixDeux = document.querySelector('.fac-croix2')
+const faqBoxDeux = document.querySelector('.faq_box2')
+const faqReponseDeux = document.querySelector('.faq_reponse2')
+
+const facBtnTrois = document.querySelector('.fac-button3')
+const facCroixTrois = document.querySelector('.fac-croix3')
+const faqBoxTrois = document.querySelector('.faq_box3')
+const faqReponseTrois = document.querySelector('.faq_reponse3')
+
 facBtnUn.addEventListener('click', () => {
     gsap.to(faqBox,{
         height:'30vh',
-        ease:'ease',
+        ease:'ease-in',
         duration:0.03
     })
     faqReponse.classList.toggle('opacity-1')
@@ -109,7 +96,7 @@ facBtnUn.addEventListener('click', () => {
 facCroixUn.addEventListener('click', () => {
     gsap.to(faqBox,{
         height:'10vh',
-        ease:'ease',
+        ease:'ease-in',
         duration:0.03
     })
     faqReponse.classList.toggle('opacity-1')
@@ -117,6 +104,56 @@ facCroixUn.addEventListener('click', () => {
     faqReponse.classList.toggle('opacity-0')
     facBtnUn.classList.remove('hidden')
     facCroixUn.classList.add('hidden')
+})
+
+facBtnDeux.addEventListener('click', () => {
+    gsap.to(faqBoxDeux,{
+        height:'30vh',
+        ease:'ease-in',
+        duration:0.03
+    })
+    faqReponseDeux.classList.toggle('opacity-1')
+    faqReponseDeux.classList.toggle('absolute')
+    faqReponseDeux.classList.toggle('opacity-0')
+    facBtnDeux.classList.add('hidden')
+    facCroixDeux.classList.remove('hidden')
+})
+facCroixDeux.addEventListener('click', () => {
+    gsap.to(faqBoxDeux,{
+        height:'10vh',
+        ease:'ease-in',
+        duration:0.03
+    })
+    faqReponseDeux.classList.toggle('opacity-1')
+    faqReponseDeux.classList.toggle('absolute')
+    faqReponseDeux.classList.toggle('opacity-0')
+    facBtnDeux.classList.remove('hidden')
+    facCroixDeux.classList.add('hidden')
+})
+
+facBtnTrois.addEventListener('click', () => {
+    gsap.to(faqBoxTrois,{
+        height:'30vh',
+        ease:'ease-in',
+        duration:0.03
+    })
+    faqReponseTrois.classList.toggle('opacity-1')
+    faqReponseTrois.classList.toggle('absolute')
+    faqReponseTrois.classList.toggle('opacity-0')
+    facBtnTrois.classList.add('hidden')
+    facCroixTrois.classList.remove('hidden')
+})
+facCroixTrois.addEventListener('click', () => {
+    gsap.to(faqBoxTrois,{
+        height:'10vh',
+        ease:'ease-in',
+        duration:0.03
+    })
+    faqReponseTrois.classList.toggle('opacity-1')
+    faqReponseTrois.classList.toggle('absolute')
+    faqReponseTrois.classList.toggle('opacity-0')
+    facBtnTrois.classList.remove('hidden')
+    facCroixTrois.classList.add('hidden')
 })
 
 
