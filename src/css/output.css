@@ -1833,6 +1833,10 @@ body{
     height: max-content;
   }
 
+  .lg\:h-\[40vh\]{
+    height: 40vh;
+  }
+
   .lg\:w-12{
     width: 3rem;
   }
@@ -1888,6 +1892,10 @@ body{
   .lg\:w-max{
     width: -moz-max-content;
     width: max-content;
+  }
+
+  .lg\:w-\[70\%\]{
+    width: 70%;
   }
 
   .lg\:scale-100{
