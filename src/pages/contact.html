@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../../assets/img/logo ok OK.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <main>
+        <header class="w-full lg:container overflow-hidden lg:mx-auto border-black/5 p-4 lg:p-6">
+            <nav class="px-5 flex overflow-hidden items-center border-b pb-2 lg:border-none justify-between">
+                <a href="../../index.html" class="relative z-50 overflow-hidden">
+                    <img src="../../assets/img/logo ok OK.png" class="w-10 lg:w-12 " alt="">
+                </a>
+                <div id="beforemenu" class="absolute h-0 duration-200 w-screen z-30 bg-white backdrop-blur-lg top-0 bottom-0 left-0 right-0 "></div>
+                <ul id="menu__toggle" class="absolute hidden z-40 text-gray-700  duration-300 scale-0 lg:scale-100 top-20 w-[70vw] p-4 lg:p-0 rounded-xl lg:text-lg lg:flex lg:items-center lg:rounded-none lg:w-max bg-white shadow-md lg:shadow-none lg:bg-transparent lg:overflow-hidden lg:top-0 lg:relative">
+                   <li id="link1" class="mt-1 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="../../index.html" class="block" id="lien1">Acceuil</a></li>
+                   <li id="link2" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="./le_bot.html" class="block" id="lien2">chatbot</a></li>
+                   <li id="link3" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="" class="block" id="lien3">Contact</a></li>
+                   <li id="link4" class="mt-5 group shadow-md lg:ml-3 lg:mt-0 p-3 px-5 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-blue-600/20 lg:rounded-full bg-blue-600 w-max text-white"><a href="./inscription.html" class="flex items-center">
+                        <span>Inscription</span>
+                        <i id="fleche1" class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 lg:ml-2 shadow-md bg-white text-blue-600 p-1 rounded-full'></i>
+                    </a></li>
+                </ul>
+                <ul id="menu__toggle2" class="absolute lg:hidden z-40 text-gray-700  duration-300 scale-0 lg:scale-100 top-20 w-[70vw] p-4 lg:p-0 rounded-xl lg:text-lg lg:items-center lg:rounded-none lg:w-max bg-white shadow-md lg:shadow-none lg:bg-transparent lg:overflow-hidden lg:top-0 lg:relative">
+                    <li id="link1" class="mt-1 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="../../index.html" class="block">Acceuil</a></li>
+                    <li id="link2" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="./le_bot.html" class="block">chatbot</a></li>
+                    <li id="link3" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="" class="block">Contact</a></li>
+                    <li id="link3" class="mt-5 group shadow-md lg:ml-3 lg:mt-0 p-3 px-5 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-blue-600/20 lg:rounded-full bg-blue-600 w-max text-white">
+                        <a href="./src/pages/inscription.html" class="flex items-center">
+                            <span>Inscription</span>
+                            <i class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 lg:ml-2 shadow-md bg-white text-blue-600 p-1 rounded-full'></i>
+                        </a></li>
+                 </ul>
+                 
+                <button id="menubtn" title="toggle nav btn" class="lg:hidden ml-2 lg:ml-0 z-50 relative mr-4">
+                    <div id="bar-1" class="bg-gray-800 h-0.5 w-6 rounded-full duration-300"></div>
+                    <div id="bar-2" class="bg-gray-800 h-0.5 w-6 rounded-full duration-300 mt-2"></div>
+                </button>  
+            </nav>
+        </header>
+
+        <!-- Start messaging us -->
+        <section>
+            <main class="w-full h-full mb-8 mt-8 p-4 grid place-content-center">
+                <form action="" class="w-[22rem]">
+                    <div class="border rounded-xl p-4 lg:p-6">
+                        <div class="mb-4 flex flex-col items-center">
+                            <h2 class="text-blue-950 font-medium text-xl ">Envoyez nous un message !!!</h2>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="" class="mt-3">votre email</label>
+                            <input type="email" name="" class="border p-2 mt-2 rounded-lg outline-none focus:border-blue-950/70 duration-300" placeholder="Votre email" id="">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="" class="mt-3">votre nom</label>
+                            <input type="text" name="" class="border p-2 mt-2 rounded-lg outline-none focus:border-blue-950/70 duration-300" placeholder="Votre email" id="">
+                        </div>
+                        <div class="flex flex-col mt-4">
+                            <label for="" class="mt-3">votre message</label>
+                            <textarea name="" id="" cols="30" rows="5" class="border mt-3 rounded-lg p-2 outline-none focus:border-blue-950/70 duration-300" placeholder="votre message..."></textarea>
+                        </div>
+                        <!-- error messages -->
+                        
+                        <button type="submit" title="submit button" class="bg-blue-950 text-white p-2 mt-4 w-full rounded-lg">Envoyer</button>
+                    </div>
+                </form>
+            </main>
+        </section>
+        
+
+        
+
+        <!-- Footer section -->
+        <footer class="p-6 lg:p-4 lg:h-[50vh] flex flex-col justify-around  bg-blue-950 rounded-t-3xl">
+            <div class="flex flex-col lg:flex-row justify-around"> 
+                <div class="text-white text-xs mt-5 lg:mt-0 lg:text-lg flex flex-col lg:flex-row justify-between lg:w-[90vw]">
+                    <div class="flex w-[70vw] lg:w-[40vw] justify-between items-center">
+                        <div>
+                            <a href="../../index.html" class="relative z-50">
+                                <img id="logo" src="../../assets/img/logo ok OK.png" class="w-20 lg:w-24 shadow-lg rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="flex flex-col">
+                            <a href="" class="block mt-3">Acceuil</a>
+                            <a href="" class="block mt-3">Chatbot</a>
+                            <a href="" class="block mt-3">Nous contacter</a>
+                            <a href="" class="block mt-3">FAQs</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-5 lg:mt-0 lg:ml-6">
+                        <a href="" class="block mt-3 underline">Rejoindre la communauté</a>
+                        <a href="" class="block mt-3 underline">Visiter le site de UPL</a>
+                    </div>
+                    <div class="flex flex-col lg:ml-6 mt-5 lg:mt-3">
+                        <p>nous suivre sur les Réseaux : </p>
+                        <div class="flex mt-3">
+                            <a href="" class="block">lk</a>
+                            <a href="" class="block ml-3">fb</a>
+                            <a href="" class="block ml-3">x</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="flex justify-center text-sm lg:text-lg mt-6 lg:mt-0 w-[80vw]  lg:w-max text-white">
+                    <h4 class="font-semibold text-center">Copyright &copy; 2023 UPL FSI It Challenge, Tous Droits Réservées</h4>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Link for lenis -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> 
+    <script src="../js/bundle.js"></script>
+
+    <!-- initialisation du smooth scroll -->
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+</body>
+</html>
