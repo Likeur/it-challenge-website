@@ -17,7 +17,7 @@
                 <li><a href="./groupe.html" class="block p-2 text-gray-900">Groupe</a></li>
             </ul>
             <div class="group">
-                <div class="h-8 w-8 bg-gray-500 rounded-full flex justify-center items-center text-white group-hover:cursor-pointer">s</div>
+                <div class="h-8 w-8 bg-gray-500 rounded-full flex justify-center items-center text-white group-hover:cursor-pointer mr-5">s</div>
                 <div class="bg-gray-100 mt-3 w-32 translate-y-3 group-hover:translate-y-0 duration-300 opacity-0 group-hover:opacity-100 rounded-lg shadow-md absolute -z-10 group-hover:z-50 right-10  border p-2">
                     <div>
                         <h2 class="font-semibold text-gray-900">The pansa</h2>
@@ -42,58 +42,66 @@
                 </div>
             </section>
 
-            <section class="mt-5 p-4 flex justify-center">
-                <div class="grid gap-4 lg:grid-cols-7 lg:w-[95vw]">
-                    <div class="flex flex-col items-center">
-                        <h2 class="bg-blue-950 text-white p-2 text-center w-full rounded-lg">Groupe</h2>
-                        <div>
-                            <p class="p-2 border-b w-full mt-2">nom groupe</p>
-                            <div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h2 class="bg-blue-950 text-white p-2 text-center w-full rounded-lg">noms</h2>
-                        <div>
-                            <p class="p-2 border-b w-full mt-2">sam palasa</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h2 class="bg-blue-950 text-white p-2 text-center w-full rounded-lg">matricule</h2>
-                        <div>
-                            <p class="p-2 border-b w-full mt-2">2021 021 274</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h2 class="bg-blue-950 text-white p-2 text-center w-full rounded-lg">Promotion</h2>
-                        <div>
-                            <p class="p-2 border-b w-full mt-2">BAC 3</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h2 class="bg-blue-950 text-white p-2 text-center w-full rounded-lg">Département</h2>
-                        <div>
-                            <p class="p-2 border-b w-full mt-2">SI</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h2 class="bg-blue-950 text-white p-2 text-center w-full rounded-lg">mail</h2>
-                        <div>
-                            <p class="p-2 border-b w-full mt-2">like@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h2 class="bg-blue-950 text-white p-2 text-center w-full rounded-lg">numero</h2>
-                        <div class="flex justify-between items-center">
-                            <p class="p-2 border-b w-full mt-2">0973387383</p>
-                            <div class="flex">
+            <section class=" lg:w-[90vw] lg:h-[80vh] border overflow-y-scroll overflow-x-scroll">
+                <table border="1" class="lg:w-[130vw] border border-collapse justify-between">
+                   <!-- Faut pas boucler sur ça -->
+                    <thead class="border bg-blue-950 text-white ">
+                        <th class="p-3">Nom Groupe</th>
+                        <th class="p-3">Noms Etudiants</th>
+                        <th class="p-3">matricule</th>
+                        <th class="p-3">Promotion</th>
+                        <th class="p-3">Département</th>
+                        <th class="p-3">email</th>
+                        <th class="p-3">numero</th>
+                        <th class="p-3">Actions</th>
+                    </thead>
+
+                  
+                    <tbody class="">
+                          <!-- ta boule comment ici -->
+                        <tr class="text-center border">
+                            <td rowspan="3" class="font-bold">Technet</td>
+                            <td>Simba wa nkulu</td>
+                            <td>2021021274</td>
+                            <td>BAC 3</td>
+                            <td>SI</td>
+                            <td>Likeur.off@gmail.com</td>
+                            <td>0973387383</td>
+                            <td class="flex items-center justify-center p-2">
                                 <button class="bg-blue-600  w-6 h-6 rounded-full flex items-center justify-center text-white"><i class='bx bx-edit-alt'></i></button>
                                 <button class="bg-red-600 ml-1 w-6 h-6 rounded-full flex items-center justify-center text-white"><i class='bx bx-trash'></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </td>
+                        </tr>
+                        <tr class="text-center border">
+                           
+                            <td>Simba wa nkulu</td>
+                            <td>2021021274</td>
+                            <td>BAC 3</td>
+                            <td>SI</td>
+                            <td>Likeur.off@gmail.com</td>
+                            <td>0973387383</td>
+                            <td class="flex items-center justify-center p-2">
+                                <button class="bg-blue-600  w-6 h-6 rounded-full flex items-center justify-center text-white"><i class='bx bx-edit-alt'></i></button>
+                                <button class="bg-red-600 ml-1 w-6 h-6 rounded-full flex items-center justify-center text-white"><i class='bx bx-trash'></i></button>
+                            </td>
+                        </tr>
+                        <tr class="text-center border">
+                          
+                            <td>Simba wa nkulu</td>
+                            <td>2021021274</td>
+                            <td>BAC 3</td>
+                            <td>SI</td>
+                            <td>Likeur.off@gmail.com</td>
+                            <td>0973387383</td>
+                            <td class="flex items-center justify-center p-2">
+                                <button class="bg-blue-600  w-6 h-6 rounded-full flex items-center justify-center text-white"><i class='bx bx-edit-alt'></i></button>
+                                <button class="bg-red-600 ml-1 w-6 h-6 rounded-full flex items-center justify-center text-white"><i class='bx bx-trash'></i></button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                    
+                </table>
             </section>
         </section>
        

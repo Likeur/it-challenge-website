@@ -17,7 +17,7 @@
                 <li><a href="./groupe.html" class="block p-2 bg-blue-950 shadow-md text-white rounded-lg hover:bg-blue-800 duration-300 drop-shadow-lg">Groupe</a></li>
             </ul>
             <div class="group">
-                <div class="h-8 w-8 bg-gray-500 rounded-full flex justify-center items-center text-white group-hover:cursor-pointer">s</div>
+                <div class="h-8 w-8 bg-gray-500 rounded-full flex justify-center items-center text-white group-hover:cursor-pointer mr-5">s</div>
                 <div class="bg-gray-100 mt-3 w-32 translate-y-3 group-hover:translate-y-0 duration-300 opacity-0 group-hover:opacity-100 rounded-lg shadow-md absolute -z-10 group-hover:z-50 right-10  border p-2">
                     <div>
                         <h2 class="font-semibold text-gray-900">The pansa</h2>
@@ -28,34 +28,41 @@
             </div>
         </nav>
 
-        <section class="p-4 w-full lg:mt-5">
-            <div class="flex w-full lg:gap-6 items-center justify-between">
-                <div class="flex items-center">
-                    <input type="search" name="" id="" placeholder="rechercher ici..." class="border p-2 outline-none focus:border-blue-950/60 rounded-l-lg">
-                    <button type="submit" class="p-2 bg-blue-950 rounded-r-lg text-white">Search</button>
-                </div>
-                <div class="flex text-gray-500">
-                    <h2>Total :</h2>
-                    <p>0</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="mt-5 p-4 flex justify-center">
-            <div class="grid gap-4 lg:grid-cols-2 lg:w-[80vw]">
-                <div class="flex flex-col items-center">
-                    <h2 class="bg-blue-950 text-white p-2 text-center w-full rounded-lg">Groupe</h2>
-                    <div>
-                        <p class="p-2 border-b w-full mt-2">nom groupe</p>
+        <section class="flex  flex-col items-center">
+            <section class="p-4 lg:w-[90vw] w-full lg:mt-5">
+                <div class="flex w-full lg:gap-6 items-center justify-between">
+                    <div class="flex items-center">
+                        <input type="search" name="" id="" placeholder="rechercher ici..." class="border p-2 outline-none focus:border-blue-950/60 rounded-l-lg">
+                        <button type="submit" class="p-2 bg-blue-950 rounded-r-lg text-white">Search</button>
+                    </div>
+                    <div class="flex text-gray-500">
+                        <h2>Total :</h2>
+                        <p>0</p>
                     </div>
                 </div>
-                <div class="flex flex-col items-center">
-                    <h2 class="bg-blue-950 text-white p-2 text-center w-full rounded-lg">Sujet</h2>
-                    <div>
-                        <p class="p-2 border-b w-full mt-2">sujet</p>
-                    </div>
-                </div>
-            </div>
+            </section>
+            
+            <section class=" lg:w-[90vw] lg:h-[80vh] border overflow-y-scroll overflow-x-scroll">
+                <table border="1" class="w-full border border-collapse justify-between">
+                   <!-- Faut pas boucler sur ça -->
+                    <thead class="border bg-blue-950 text-white ">
+                        <th class="p-3">Nom Groupe</th>
+                        <th class="p-3 border-l">Sujets</th>  
+                    </thead>
+    
+                  
+                    <tbody class="">
+                          <!-- ta boule comment ici -->
+                        <tr class="text-center border">
+                            <td rowspan="3" class="font-bold">Technet</td>
+                            <td class="p-2 border-l">La ferme informatisé</td>
+                        </tr>
+                        
+                        
+                    </tbody>
+                    
+                </table>
+            </section>
         </section>
        
     </main>
